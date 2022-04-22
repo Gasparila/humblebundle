@@ -1,0 +1,2653 @@
+<html>
+    <head>
+        <title>My list</title>
+        <style>
+            footer {
+                text-align: center;
+                margin-top: 1em;
+            }
+            div.empty_icon {
+                height: 68px;
+                width: 68px;
+                background: gray;
+                border-radius: 15px;
+            }
+            img.platform {
+                height: 16px;
+            }
+            span.byline {
+                color: gray;
+                font-size: 0.75em;
+                font-style: italic;
+            }
+            table, th, td {
+                border: 1px solid;
+            }
+            th, td {
+                padding: 0.5em 1em 0.5em 1em;
+            }
+        </style>
+        <script>
+            const filterByPlatform = (platform) => {
+                document.querySelectorAll('tr.game').forEach(row => {
+                    console.log(row.classList.contains(platform));
+
+                    if (row.classList.contains(platform)) {
+                        row.style.display = 'table-row';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            };
+        </script>
+        <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>My List</h1>
+        <div>
+        Find
+            <ul>
+                <li>🕹 <a href="#Games">Games</a></li><li>📚 <a href="#Books">Books</a></li><li>🛠 <a href="#3DModels">3D Models</a></li><li>🎵 <a href="#Soundtracks">Soundtracks</a></li><li>💻 <a href="#Software">Software</a></li><li>📺 <a href="#Videos">Videos</a></li></ul>
+            If an entry has a ⭐, I've played/seen/read/listened to it and really enjoyed it
+
+        </div>
+
+        <a id="Games"><h2>🕹 Games</h2></a>
+            <ul>
+                <li>If a game has a <img class="platform" src="img/steam.svg"/>, it means that I have a Steam key (but you'll have to check Steam to know compatibility)</li>
+                <li>If a game has platform icon, it means that I have a downloadable version of it in that platform</li>
+            </ul>
+            Show:
+            <a href="#" onClick="filterByPlatform('all');">all</a>,
+            <img onClick="filterByPlatform('android');" class="platform" src="img/android.svg"/>
+            <img onClick="filterByPlatform('linux');" class="platform" src="img/linux.svg"/>
+            <img onClick="filterByPlatform('mac');" class="platform" src="img/mac.svg"/>
+            <img onClick="filterByPlatform('steam');" class="platform" src="img/steam.svg"/>
+            <img onClick="filterByPlatform('windows');" class="platform" src="img/windows.svg"/>
+            <table>
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>Name</td>
+                        <td>Platforms</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=112 Operator">112 Operator</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/46ce7f4c5ec9a1b1332a4d5f66bc44f620a3bf20.png?auto=compress,format&s=1115364187b1ee7f4df6d356dcae002d"/>
+                            </td>
+                        <td>
+                            <a href="http://www.midboss.com">2064: Read Only Memories</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/6a4256c4c0aff8fcbbbae03366f73092a10420ad.png?auto=compress,format&s=fbc9d3d636766bb7cf62ccc11a6fa7a2"/>
+                            </td>
+                        <td>
+                            <a href="http://www.mousechief.com">7 Grand Steps: What Ancients Begat</a> </td>
+                        <td>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=911 Operator">911 Operator</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/408f676a3cceaada3f629a9bc454ce8ce40f9015.png?auto=compress,format&s=7f25f0c7852970a4d40a703fad6f71ba"/>
+                            </td>
+                        <td>
+                            <a href="http://www.avirusnamedtom.com/">A Virus Named TOM</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/c67c7b44fd7e71328081e3182a308bf67e5d3594.png?auto=compress,format&s=533c7f9ae61912254aad256c3ed5ebdc"/>
+                            </td>
+                        <td>
+                            <a href="http://arcengames.com/ai-war/">AI War: Fleet Command</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Amnesia: Rebirth">Amnesia: Rebirth</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/68b6754f8d757102ada5a9396de89c8239fe4e91.png?auto=compress,format&s=fd7fd8c6ae1dd17ced0665c4af493ba7"/>
+                            </td>
+                        <td>
+                            <a href="http://www.amnesiagame.com">Amnesia: The Dark Descent + Amnesia: A Machine for Pigs</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all android linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/329a87555cf379db42ae0774fb326e7088ad1776.png?auto=compress,format&s=8352f1b4b93dc5105f1364aaf683bad0"/>
+                            </td>
+                        <td>
+                            <a href="http://www.anomalythegame.com">Anomaly Warzone Earth</a> </td>
+                        <td>
+                            <img class="platform" src="img/android.svg"/>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all android linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/53e737f46faa53fc8d2bf761709a65dbf084ca45.png?auto=compress,format&s=98aa2023e177cace58f49259b4159e6c"/>
+                            </td>
+                        <td>
+                            <a href="http://www.gaijingames.com">BIT.TRIP BEAT</a> </td>
+                        <td>
+                            <img class="platform" src="img/android.svg"/>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Back 4 Blood">Back 4 Blood</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/1c11d970f629fa45be31bb2958c91b74454e3561.png?auto=compress,format&s=9ca5efa9d785857e0a3e5f7d13e8082f"/>
+                            </td>
+                        <td>
+                            <a href="http://www.bombsheltergames.com/">Ballistick</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/565b030cd91f5d29229fef28c8ab1aed9ba0bad1.png?auto=compress,format&s=b3ea73023745a560f04c02a51eadff5c"/>
+                            </td>
+                        <td>
+                            <a href="http://supergiantgames.com/?page_id=242">Bastion</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/e569c6ebd5380ba235e6a4ca9e07118fe8b5e546.png?auto=compress,format&s=9596160be60b4c0b4e0bc3183c9a28b2"/>
+                            </td>
+                        <td>
+                            <a href="http://www.coldbeamgames.com">Beat Hazard Ultra</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Book of Demons">Book of Demons</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/f90fbc1c481f4c54623f1529ae47d65a9d93648e.png?auto=compress,format&s=fd3e8793b34b533926335ec8910ce2a3"/>
+                            </td>
+                        <td>
+                            <a href="http://www.braid-game.com/">Braid</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Broken Age">Broken Age</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/6d7baa27d894dcfcf8e6b6e66c4d3aa9cd3c780d.png?auto=compress,format&s=3fe53dc5580c1458fdf5f8d94ac8122f"/>
+                            </td>
+                        <td>
+                            <a href="http://www.doublefine.com/brutallegend/">Brütal Legend</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Car Mechanic Simulator 2018">Car Mechanic Simulator 2018</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/b1cb9b05d027a14b874416214965fe1aa68cd985.png?auto=compress,format&s=214434074b2a16ed571bbf5583d078b7"/>
+                            </td>
+                        <td>
+                            <a href="http://www.chromasquad.com">Chroma Squad</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Corridor Z">Corridor Z</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Crying Suns">Crying Suns</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=DV: Rings of Saturn">DV: Rings of Saturn</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Dagon: by H. P. Lovecraft - The Eldritch Box DLC">Dagon: by H. P. Lovecraft - The Eldritch Box DLC</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/34785ae0ea71834f2c65aeaa13cc7781bcce290f.png?auto=compress,format&s=3a3099c1f1925d34e9340eaf4b50023c"/>
+                            </td>
+                        <td>
+                            <a href="http://mousechief.com/dhsg/index.html">Dangerous High School Girls in Trouble</a> </td>
+                        <td>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/e4deb24a1de8e77c6227d86a23024460345f73cf.png?auto=compress,format&s=6f36e8996169c6caaed569d0a6f5c8be"/>
+                            </td>
+                        <td>
+                            <a href="http://www.doublefine.com/">Day of the Tentacle Remastered</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Dear Esther: Landmark Edition">Dear Esther: Landmark Edition</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Draw Slasher">Draw Slasher</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Driftland: The Magic Revival">Driftland: The Magic Revival</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/3f37970bdce7aaf0301f71e2a88ddf13dd8517a9.png?auto=compress,format&s=d0ca5fae06a2c18c4e044d915e8f10be"/>
+                            </td>
+                        <td>
+                            <a href="http://dustyrevenge.com/">Dusty Revenge: Co-Op Edition</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all android linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/b5676c80ebfbb40d9ffee3d4f0a29774db479721.png?auto=compress,format&s=53f02673aa802739fa1f1ad2480d5a7c"/>
+                            </td>
+                        <td>
+                            <a href="http://twotribes.com/">EDGE</a> </td>
+                        <td>
+                            <img class="platform" src="img/android.svg"/>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=EarthX">EarthX</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/8a67793466cde7af75c774fae5addbddcce7958f.png?auto=compress,format&s=6c9f1266dc3aa7fcbf5c1e04087e946d"/>
+                            </td>
+                        <td>
+                            <a href="http://www.kleientertainment.com">Eets Munchies</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Ellipsis">Ellipsis</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Endless Space 2">Endless Space 2</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Expeditions: Viking">Expeditions: Viking</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/ab6dd345027ca7eeac1c42eb1f3646cb83898a31.png?auto=compress,format&s=2da9e4e8633d81ec27a8c504529892fc"/>
+                            </td>
+                        <td>
+                            <a href="http://fezgame.com/">FEZ</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/b17021207d3c47c733b3c3b0b5dc1185308ea53e.png?auto=compress,format&s=b7cc21b203898eabd0e9180e42b390dd"/>
+                            </td>
+                        <td>
+                            <a href="http://www.ftlgame.com">FTL: Faster than Light</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all android linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/35dd3dff886e04f98fcc5c7ffca2e3b87dea467c.png?auto=compress,format&s=a257242b6c332532bf4feeddf0f75e8b"/>
+                            </td>
+                        <td>
+                            <a href="http://subatomicstudios.com/">Fieldrunners</a> </td>
+                        <td>
+                            <img class="platform" src="img/android.svg"/>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Fieldrunners, BIT.TRIP BEAT, SpaceChem, and Uplink">Fieldrunners, BIT.TRIP BEAT, SpaceChem, and Uplink</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Fury Unleashed">Fury Unleashed</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=GRAV (Early Access)">GRAV (Early Access)</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/7172a035a98402df8ae83d16c5c6bdffc33d409a.png?auto=compress,format&s=9bb572239c02df37929862e41f47cee2"/>
+                            </td>
+                        <td>
+                            <a href="http://popcannibal.com">Girls Like Robots</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Gloria Victis">Gloria Victis</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Go Home Dinosaurs">Go Home Dinosaurs</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Going Under">Going Under</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/c5dc6fb2df31293e7f6c3b049870318f18b4c9e4.png?auto=compress,format&s=889b4a44cbd1044498e1158157680ac9"/>
+                            </td>
+                        <td>
+                            <a href="http://guacamelee.com/">Guacamelee! Gold Edition</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all windows">
+                        <td>
+                            <img src="https://hb.imgix.net/e732417e1f71c17dca4307b6b9e923c097aaeb2d.png?auto=compress,format&s=2365e7e4ab6b198113191033f7373428"/>
+                            </td>
+                        <td>
+                            <a href="http://guacamelee.com/">Guacamelee! Super Turbo Championship Edition</a> </td>
+                        <td>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Guns of Icarus Online">Guns of Icarus Online</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/bca874811a2625c26caf942e6caa42000210f414.png?auto=compress,format&s=9662539dd9e3fd50afdcec440757d2fe"/>
+                            </td>
+                        <td>
+                            <a href="http://defiantdev.com/handoffate.php">Hand of Fate</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Hexologic">Hexologic</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/738d25d9916f804325a07e8fac2d260387809567.png?auto=compress,format&s=2eab6763cc72c7c8ddb82436f99ebf8f"/>
+                            </td>
+                        <td>
+                            <a href="http://www.glassbottomgames.com">Hot Tin Roof: The Cat That Wore A Fedora Deluxe</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/6bafbe0d446f1020470a7ab3b3c408c885afbfb0.png?auto=compress,format&s=37fbe63b5723f77ff386942420d2cb64"/>
+                            </td>
+                        <td>
+                            <a href="http://tomorrowcorporation.com">Human Resource Machine</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Inmost">Inmost</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/f1802793e18b16218bba3230bcce7364585f590b.png?auto=compress,format&s=c8701b008cec342e8eabdf9a52282ed8"/>
+                            </td>
+                        <td>
+                            <a href="http://www.invisibleincgame.com/">Invisible, Inc.</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Iron Danger">Iron Danger</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/d530df6b1f45daa237956eff7d4482e78558a67c.png?auto=compress,format&s=e43a152328d6ffe96364d797e4310ab7"/>
+                            </td>
+                        <td>
+                            <a href="http://www.jumpjetrex.com">JumpJet Rex</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Kerbal Space Program">Kerbal Space Program</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Kingdom Two Crowns">Kingdom Two Crowns</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/05a917b90570b9a56fb177070ad669962dd2f3c2.png?auto=compress,format&s=1ee4e61bae5f5cfec4b6c797ecd43784"/>
+                            </td>
+                        <td>
+                            <a href="http://limbogame.org">LIMBO</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/f68942f9fc9903842efce0e59a313365783222a6.png?auto=compress,format&s=1455d0f494f1e09e46ae793b438f35f4"/>
+                            </td>
+                        <td>
+                            <a href="http://www.lonesurvivor.co.uk/">Lone Survivor: The Director's Cut</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/e91ee358d40e6ef2e8c589373889533aa52287e6.png?auto=compress,format&s=fa7f85b3715ce31c8bd8abee7161d16e"/>
+                            </td>
+                        <td>
+                            <a href="http://serenityforge.com/games/lunaswanderingstars.html">Luna's Wandering Stars</a> </td>
+                        <td>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Lust for Darkness">Lust for Darkness</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Lust from Beyond: M Edition">Lust from Beyond: M Edition</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/c36bb5ef2c90f237f8dc6e95613d4c2853f69598.png?auto=compress,format&s=bce037574eca648df918e26ee3985115"/>
+                            </td>
+                        <td>
+                            <a href="http://www.markoftheninja.com/">Mark of the Ninja</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Metro Exodus">Metro Exodus</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all android linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/9c5de030eaca06e42553d6b8003c32ba7bb31ff1.png?auto=compress,format&s=95a863bbf092ef797ada50395869b341"/>
+                            </td>
+                        <td>
+                            <a href="http://dinopoloclub.com/minimetro">Mini Metro</a> </td>
+                        <td>
+                            <img class="platform" src="img/android.svg"/>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Monaco">Monaco</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Monster Loves You">Monster Loves You</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Moon Hunters">Moon Hunters</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Motorcycle Mechanic Simulator 2021">Motorcycle Mechanic Simulator 2021</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/f1585a54655b824653386076f1c2933b4a99364b.png?auto=compress,format&s=1a33781ec355ba45652e2a3139ba7b0e"/>
+                            </td>
+                        <td>
+                            <a href="http://mushroom11.com">Mushroom 11</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=NecroWorm">NecroWorm</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Neverout">Neverout</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Nex Machina">Nex Machina</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Ninja Pizza Girl">Ninja Pizza Girl</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=No Time to Explain">No Time to Explain</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Nuclear Throne">Nuclear Throne</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Octodad Dadliest Catch">Octodad Dadliest Catch</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/71c4a7e34c0d18c78da55bc2808855150e08f7d7.png?auto=compress,format&s=c5662db0f3f012da2e2c92b127561494"/>
+                            </td>
+                        <td>
+                            <a href="http://www.octodadgame.com">Octodad: Dadliest Catch</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Orbital Racer">Orbital Racer</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all android linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/32b6f78187d19e798e5f15f5e4ff1d5ade24b41d.png?auto=compress,format&s=62c8e6ab6b4477b32ef0b16a4d93269c"/>
+                            </td>
+                        <td>
+                            <a href="http://www.hemispheregames.com/">Osmos</a> </td>
+                        <td>
+                            <img class="platform" src="img/android.svg"/>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Out of Reach: Treasure Royale">Out of Reach: Treasure Royale</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/f0efada7d3fb5ac8438abb18c9048e6f34cf3bf5.png?auto=compress,format&s=69b70d689854e592a8ae6ffa732a0b59"/>
+                            </td>
+                        <td>
+                            <a href="http://www.wolfire.com/overgrowth">Overgrowth</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=PGA Tour 2K21">PGA Tour 2K21</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Pathway">Pathway</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Pawnbarian">Pawnbarian</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Pikuniku">Pikuniku</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Pixplode">Pixplode</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Popup Dungeon">Popup Dungeon</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Post Void">Post Void</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/5704311c873e2b41d4567879ae4cfcbe1a28ad9f.png?auto=compress,format&s=9d94339af803f93380b90c214f5b0b15"/>
+                            </td>
+                        <td>
+                            <a href="http://www.pixeljam.com/potatoman">Potatoman Seeks the Troof</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/34dd5545d3b76c5868b9faba239c7e22dec5e49d.png?auto=compress,format&s=2921a2b8c01f4d780ad0e3908b2dfcb0"/>
+                            </td>
+                        <td>
+                            <a href="http://www.psychonauts.com/">Psychonauts</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/740a5e67d1e18139d33923cd1affd3dae8001df1.png?auto=compress,format&s=bc64e52cfbd5133968373a76c6836165"/>
+                            </td>
+                        <td>
+                            <a href="http://www.qube-game.com/">Q.U.B.E.: Director's Cut</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Quantum Break">Quantum Break</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/90059ba94ea1d29998731d70e5320de1b28a67f1.png?auto=compress,format&s=125a194eca1387679de39f4ee68479af"/>
+                            </td>
+                        <td>
+                            <a href="http://www.rocketsrocketsrockets.com">ROCKETSROCKETSROCKETS</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Radio Commander">Radio Commander</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/9230376db689fbf5916420113bfff6f659dcf3b5.png?auto=compress,format&s=5968c6b054118a3e100b7d8e99108464"/>
+                            </td>
+                        <td>
+                            <a href="http://retrogamecrunch.com">Retro Game Crunch</a> </td>
+                        <td>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Ring of Pain">Ring of Pain</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Rituals">Rituals</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Roarr! Jurassic Edition">Roarr! Jurassic Edition</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Robot Roller-Derby Disco Dodgeball">Robot Roller-Derby Disco Dodgeball</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/c285dfde6169b110de26d8638f66976f00342175.png?auto=compress,format&s=c852871dffaba7e37759e67d3af2f512"/>
+                            </td>
+                        <td>
+                            <a href="http://www.rocketbirds.com/">Rocketbirds: Hardboiled Chicken</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Rustler">Rustler</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Ryse: Son of Rome">Ryse: Son of Rome</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=SUPERHOT">SUPERHOT</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=SYSTEM SHOCK: ENHANCED EDITION">SYSTEM SHOCK: ENHANCED EDITION</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Satisfactory">Satisfactory</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Say No! More">Say No! More</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/ad1d3f8d3dbd04d0a91e688474c41dd0439c82bd.png?auto=compress,format&s=cec51b96a1375c8d44474b036bbeeb2f"/>
+                            </td>
+                        <td>
+                            <a href="http://www.secrets-of-raetikon.com">Secrets of Rætikon</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Shing!">Shing!</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Skullgirls 2nd Encore">Skullgirls 2nd Encore</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Slinger VR">Slinger VR</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Song of the Deep">Song of the Deep</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Soulblight">Soulblight</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all android linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/deb092f610df459833df27a72cc7c09ca14d03e8.png?auto=compress,format&s=519003cc505c1f8f38a3f9adfc497051"/>
+                            </td>
+                        <td>
+                            <a href="http://spacechemthegame.com/">SpaceChem</a> </td>
+                        <td>
+                            <img class="platform" src="img/android.svg"/>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all android linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/a3b7f916e6548a8a6e691dce345a1d8bcdf85294.png?auto=compress,format&s=9f734a667f93bd9573f9051747b7bb65"/>
+                            </td>
+                        <td>
+                            <a href="http://www.spacesofplay.com/spirits/">Spirits</a> </td>
+                        <td>
+                            <img class="platform" src="img/android.svg"/>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/d8752dfa5522ac0ae347f41fe63df904d6d71fea.png?auto=compress,format&s=51c7b42967e86a65278a7a1c3b4aa68a"/>
+                            </td>
+                        <td>
+                            <a href="http://www.freeholdgames.com">Sproggiwood</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Starbound">Starbound</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Stardew Valley">Stardew Valley</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Streamline Early Access">Streamline Early Access</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Sunset Overdrive">Sunset Overdrive</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Super Galaxy Squadron EX">Super Galaxy Squadron EX</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/172de17cc9ebbbad1e09caa15ad11222f3ce2b52.png?auto=compress,format&s=422f8ac78846146170825a2837694f3e"/>
+                            </td>
+                        <td>
+                            <a href="http://www.superhexagon.com">Super Hexagon</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/85b68351ba3ed2867253a2882d6483da0dce370b.png?auto=compress,format&s=2ac6691517a233ffed9741c55a27e47c"/>
+                            </td>
+                        <td>
+                            <a href="http://www.supermeatboy.com/">Super Meat Boy</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/efd3a4f45dfcd04181f5f286c73daf02c85fb22f.png?auto=compress,format&s=71e545789b2502c539e1d513807d7971"/>
+                            </td>
+                        <td>
+                            <a href="http://www.swordandsworcery.com">Superbrothers: Sword & Sworcery EP</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Supraland">Supraland</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all windows">
+                        <td>
+                            <img src="https://hb.imgix.net/30eb3659bce6a3607be5c1c565bf971cdb290e18.png?auto=compress,format&s=13813367708a1a721bd72f81a79a7ced"/>
+                            </td>
+                        <td>
+                            <a href="http://www.sshock2.com">System Shock 2</a> </td>
+                        <td>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=System Shock Pack">System Shock Pack</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all windows">
+                        <td>
+                            <img src="https://hb.imgix.net/d3c9623476bae44950c64c888ce266389d75032f.png?auto=compress,format&s=9ef9784026ce9f6d6b8ad65b363982a1"/>
+                            </td>
+                        <td>
+                            <a href="http://www.nightdivestudios.com/">System Shock: Enhanced Edition</a> </td>
+                        <td>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=TIMEframe">TIMEframe</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/204c760792daa656a8d0ad014b012053dfc93a20.png?auto=compress,format&s=02940be5c699920b71c7e46d16f55819"/>
+                            </td>
+                        <td>
+                            <a href="http://teamindie.brightside-games.com">Team Indie</a> </td>
+                        <td>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Telefrag VR">Telefrag VR</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=The Amazing American Circus">The Amazing American Circus</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=The Long Dark">The Long Dark</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/6fc8a2f7022b3a2c6ac3c21253659ab570189a91.png?auto=compress,format&s=b5dd039e6a9c1f39f0b80b75f911c299"/>
+                            </td>
+                        <td>
+                            <a href="http://stanleyparable.com/">The Stanley Parable</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/36440cf53faa21ed9f12de50b957e7c175b88551.png?auto=compress,format&s=38355d390dbc3fac70e11b1e7a210917"/>
+                            </td>
+                        <td>
+                            <a href="http://facepalmgames.com/the-swapper/">The Swapper</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=The USB Stick Found in the Grass">The USB Stick Found in the Grass</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Thirty Flights of Loving">Thirty Flights of Loving</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=This War of Mine">This War of Mine</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Toejam & Earl: Back in the Groove">Toejam & Earl: Back in the Groove</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Tooth and Tail">Tooth and Tail</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/b3723a81dac0dc975b50d7b8438bc984c9df81bb.png?auto=compress,format&s=b3e19f3bc90ec0d8adb42303bbd21c0c"/>
+                            </td>
+                        <td>
+                            <a href="http://www.towerofguns.com">Tower of Guns</a> </td>
+                        <td>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Treasure Hunter Simulator">Treasure Hunter Simulator</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/84f960b4724c6edec068c74b9a1cce2db9951a3f.png?auto=compress,format&s=40d84f58c11e1a216e6b143bdd5db956"/>
+                            </td>
+                        <td>
+                            <a href="http://www.trine2.com">Trine 2: Complete Story</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all android linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/2c24f56830a986ad6f0d4c4f80c9f712f5f30441.png?auto=compress,format&s=a803651e3162d4d6ddd94bd2034b430f"/>
+                            </td>
+                        <td>
+                            <a href="http://www.introversion.co.uk/uplink/">Uplink</a> </td>
+                        <td>
+                            <img class="platform" src="img/android.svg"/>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/6acde75e49611da05c155201d4acf751fb969b75.png?auto=compress,format&s=97ae479676bb2266138a90f79505e4d0"/>
+                            </td>
+                        <td>
+                            <a href="http://thelettervsixtim.es/">VVVVVV</a> </td>
+                        <td>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Vagante">Vagante</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all android linux mac steam windows">
+                        <td>
+                            <img src="https://hb.imgix.net/e2bcc99c1b603a3e21fda907ba0009927ad79ff5.png?auto=compress,format&s=1e6fa493a5f53dccde995a43da5332dc"/>
+                            </td>
+                        <td>
+                            <a href="http://www.tigerstylegames.com">Waking Mars</a> </td>
+                        <td>
+                            <img class="platform" src="img/android.svg"/>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/steam.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Wandersong">Wandersong</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Wargroove">Wargroove</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=We Are Alright">We Are Alright</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=West of Dead">West of Dead</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=Wizard of Legend">Wizard of Legend</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all android linux mac windows">
+                        <td>
+                            <img src="https://hb.imgix.net/fda698e7e734dbeb2fbaaa679cc305edfeea91d9.png?auto=compress,format&s=06f91d46b226d0c49d9f952340ab7448"/>
+                            </td>
+                        <td>
+                            <a href="http://2dboy.com/games.php">World Of Goo</a> </td>
+                        <td>
+                            <img class="platform" src="img/android.svg"/>
+                            <img class="platform" src="img/linux.svg"/>
+                            <img class="platform" src="img/mac.svg"/>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=World of Goo">World of Goo</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=World of Goo, Anomaly, Osmos, and EDGE">World of Goo, Anomaly, Osmos, and EDGE</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=X-Morph: Defense + European Assault, Survival of the Fittest, and Last Bastion DLC">X-Morph: Defense + European Assault, Survival of the Fittest, and Last Bastion DLC</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr class="game all steam">
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://store.steampowered.com/search/?term=shutshimi">shutshimi</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    </tbody>
+            </table>
+        <a id="Books"><h2>📚 Books</h2></a>
+            <table>
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>Name</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/4e197248d6f6ec1ade052fb3f91692e12ee79f49.png?auto=compress,format&s=1bf651b8526ffae06594fa6e48d57a23"/>
+                            </td>
+                        <td>
+                            <a href="http://www.neilgaiman.com/">A Little Gold Book of Ghastly Stuff </a>
+                            <span class="byline">by Neil Gaiman</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/5d87b6646ac77cb1434dfc4079a607b274bff2ce.png?auto=compress,format&s=db941b04ee39ee28c49900f9e7b9f3d4"/>
+                            </td>
+                        <td>
+                            <a href="http://www.crafty-games.com/buy-now/alloy-of-law/">Alloy of Law: Mistborn (Campaign Setting & Game Setting)</a>
+                            <span class="byline">by Crafty Games</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/ad5194bed61c30abca184cdc86d3a0ea64d57625.png?auto=compress,format&s=45644f6ebe08f2d029414f1411b2d45b"/>
+                            </td>
+                        <td>
+                            <a href="https://www.idwpublishing.com/">Any Empire by Nate Powell</a>
+                            <span class="byline">by IDW Publishing</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/a687008f8dd261ec71f8406b9130b3c6879f27b9.png?auto=compress,format&s=b96efb03acdb68c11ca0cfe7e0ae9a90"/>
+                            </td>
+                        <td>
+                            <a href="https://www.dynamite.com/htmlfiles/">Army of Darkness One-Shot Humble Bundle Exclusive</a>
+                            <span class="byline">by Dynamite Entertainment</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/5ffbe086fa60a733089567666a97885c8e50c640.png?auto=compress,format&s=dcd9c077aad29c96918d9fd38de66af1"/>
+                            </td>
+                        <td>
+                            <a href="https://nostarch.com/automatestuff2">Automate the Boring Stuff with Python: Practical Programming for Total Beginners</a>
+                            <span class="byline">by No Starch Press</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/3aa179df4326559abc8bb2da0c1d8238f7064dc9.png?auto=compress,format&s=0cc9312c605ce19da4ad9a9e0749d7a2"/>
+                            </td>
+                        <td>
+                            <a href="http://www.cheriepriest.com/">Boneshaker</a>
+                            <span class="byline">by Cherie Priest</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/1ffa6cc26a68e54b9f3e20e2c5af8e1eb1ae45a6.png?auto=compress,format&s=e4546b406ee1045d400ecb59814798ff"/>
+                            </td>
+                        <td>
+                            <a href="http://www.crafty-games.com/buy-now/mistborn-adventure-game/">Brandon Sanderson's Mistborn Adventure Game</a>
+                            <span class="byline">by Crafty Games</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/88cf2ad5e960a9a86d0dcec08b9db4a996f5aaf8.png?auto=compress,format&s=158854cc267041cee7ad35d80c4f46a3"/>
+                            </td>
+                        <td>
+                            <a href="http://brandonsanderson.com/dreamer">Dreamer</a>
+                            <span class="byline">by Dragon Steel</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/546a96dd6ad0263aa7217a06f556323ee86efea7.png?auto=compress,format&s=0e285c51808852dd17c020aaa99d6aa1"/>
+                            </td>
+                        <td>
+                            <a href="http://brandonsanderson.com/firstborn">Firstborn / Defending Elysium</a>
+                            <span class="byline">by Dragon Steel</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/2dc87294c1417d249c20a7728539eb6c59b7bfce.png?auto=compress,format&s=7df37872f7cb4c9c1bc3320a093be65d"/>
+                            </td>
+                        <td>
+                            <a href="http://gamkedo.com/">Hands-On Intro to Game Programming</a>
+                            <span class="byline">by Chris DeLeon</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/8d9fd2359a37b4af815b1b7e1f59dbce58602078.png?auto=compress,format&s=f0994689ed0f0525fca8324a23d79ee8"/>
+                            </td>
+                        <td>
+                            <a href="http://craphound.com/idwtbf/">Information Doesn't Want To Be Free</a>
+                            <span class="byline">by Cory Doctorow</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/2d338a0eb88200bd4eadf387adb6a548ea982f6b.png?auto=compress,format&s=8555eacc1914b5df072dd82055dd37d4"/>
+                            </td>
+                        <td>
+                            <a href="https://shop.2000ad.com/catalogue/GRN323">Judge Death: My Name is Death</a>
+                            <span class="byline">by IDW Publishing</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/eb92a2d51326f787adb19523a32167dd8a15a262.png?auto=compress,format&s=8902e76c9ce486cb3ebe4f8392488a8b"/>
+                            </td>
+                        <td>
+                            <a href="http://wilwheaton.net/">Just a Geek</a>
+                            <span class="byline">by Wil Wheaton</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/90748dbf181ebf43a373c90f7f13828aad6568a8.png?auto=compress,format&s=984e9052b56cc043b1fd503e39c9943d"/>
+                            </td>
+                        <td>
+                            <a href="https://brandonsanderson.com/books/legion/legion/">Legion</a>
+                            <span class="byline">by Dragon Steel</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/8ae14c7fb6ea35d0f430bbb905574d15a4c7413f.png?auto=compress,format&s=36070c912814ff3a6a4a662735bf72b2"/>
+                            </td>
+                        <td>
+                            <a href="https://brandonsanderson.com/books/legion/legion-skin-deep/">Legion: Skin Deep</a>
+                            <span class="byline">by Dragon Steel</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/137dfd5cfd45e087f8e5f69c2f5dbfbe7096092a.png?auto=compress,format&s=b6fe9071e956aa4c80d2078290738676"/>
+                            </td>
+                        <td>
+                            <a href="http://craphound.com/">Little Brother</a>
+                            <span class="byline">by Cory Doctorow</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/6887cacc620a9568c6fdb31cdb5b3b1129309e7b.png?auto=compress,format&s=e9230ae72f9448adac16b73701e44a5a"/>
+                            </td>
+                        <td>
+                            <a href="http://www.humanoids.com">MAKHNO</a>
+                            <span class="byline">by Humanoids</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/bd42ce94f30cbf510519b89bfaade083ee1c08d4.png?auto=compress,format&s=b700fde73806040899115d5bf871b1d2"/>
+                            </td>
+                        <td>
+                            <a href="http://machineofdeath.net/">Machine of Death</a>
+                            <span class="byline">by Machines of Death</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/9cae7def1912a1fcc3f6fd607c7568cdf29113e7.png?auto=compress,format&s=6f078ff21c53c9e4e0e6ac02ba9eb2d2"/>
+                            </td>
+                        <td>
+                            <a href="https://brandonsanderson.com/perfect-state/">Perfect State</a>
+                            <span class="byline">by Dragon Steel</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/ed19b4cc51b8af3b91403f9ab24ba0c3a2321160.png?auto=compress,format&s=25e65a5de7f7924070efbb18ec60652f"/>
+                            </td>
+                        <td>
+                            <a href="http://www.blackholly.com/">Poison Eaters and Other Stories</a>
+                            <span class="byline">by Holly Black</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/0320117e9e282c9cba757314835a15c643bd568c.png?auto=compress,format&s=efe35855299fc015e8f55d0c59567013"/>
+                            </td>
+                        <td>
+                            <a href="http://shop.oreilly.com/product/0636920022008.do">R in a Nutshell: A Desktop Quick Reference, 2nd Edition</a>
+                            <span class="byline">by O'Reilly</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/dcc6a305030a2690465babeaef122c6af8c2cf98.png?auto=compress,format&s=93d928ab9b0ebcf6fe630294b149f03e"/>
+                            </td>
+                        <td>
+                            <a href="https://www.dynamite.com/htmlfiles/">Red Sonja: Petitioning the Queen</a>
+                            <span class="byline">by Dynamite Entertainment</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/8d0f82d0ed2876c75abb585e74533555b79dd954.png?auto=compress,format&s=01a77c6d167ac0ab1622127864aee8ab"/>
+                            </td>
+                        <td>
+                            <a href="https://brandonsanderson.com/shadows-for-silence-in-the-forests-of-hell/">Shadows for Silence in the Forests of Hell</a>
+                            <span class="byline">by Dragon Steel</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/8684c8dcb252c65474896877d2eee50564e34baf.png?auto=compress,format&s=25249569f41761c3ef4cb813996b7dc5"/>
+                            </td>
+                        <td>
+                            <a href="http://www.dendarii.com/">Shards of Honor (Vorkosigan Saga #1)</a>
+                            <span class="byline">by Lois McMaster Bujold</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/53d20e1a72bbac8b976466eb9f030a9eabe20612.png?auto=compress,format&s=7b1799c5257f5a08ad9eb7aec16e2675"/>
+                            </td>
+                        <td>
+                            <a href="http://www.neilgaiman.com/">Signal to Noise</a>
+                            <span class="byline">by Neil Gaiman & Dave McKean</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/695e992e44ce06a0fb01233c3f929db137c6c39a.png?auto=compress,format&s=843c4b882a6e09626455f2da37fde3a5"/>
+                            </td>
+                        <td>
+                            <a href="https://brandonsanderson.com/sixth-of-the-dusk/">Sixth of the Dusk</a>
+                            <span class="byline">by Dragon Steel</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/1f9eb39ed565cf6f4892420a649c5ad61560143c.png?auto=compress,format&s=368f967f28273a69fb84edd4c03f0a82"/>
+                            </td>
+                        <td>
+                            <a href="http://www.nostarch.com/smartgirlsguide">Smart Girl's Guide to Privacy: Practical Tips for Staying Safe Online</a>
+                            <span class="byline">by No Starch Press</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/00a4213f8f7b20889711934dd28fd961236d3fa0.png?auto=compress,format&s=615ffedde02a85b2797f0605aa18887a"/>
+                            </td>
+                        <td>
+                            <a href="http://brandonsanderson.com/snapshot">Snapshot</a>
+                            <span class="byline">by Dragon Steel</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/581a8d0b7e96d959dd89e917a595908bfaef73ef.png?auto=compress,format&s=e16c63c043ee63215cce23f81f8e9dd8"/>
+                            </td>
+                        <td>
+                            <a href="https://microcosmpublishing.com/">Soviet Daughter: A Graphic Revolution</a>
+                            <span class="byline">by Microcosm</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/ecde8b42b195bba27e627c64de9300573e3bf4e9.png?auto=compress,format&s=5a93d9c939699d481c61863de13e30ed"/>
+                            </td>
+                        <td>
+                            <a href="http://www.robertcharleswilson.com/">Spin</a>
+                            <span class="byline">by Robert Charles Wilson</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/c969c835064c8cb29e349d3dd3056738f5fb7cdc.png?auto=compress,format&s=04e6a956f6f72c016270048b2fdf6e4f"/>
+                            </td>
+                        <td>
+                            <a href="http://greenroninstore.com/collections/a-song-of-ice-and-fire-roleplaying/products/a-song-of-ice-and-fire-roleplaying-campaign-guide-a-game-of-thrones-edition-pdf">Terris: Wrought of Copper (Player’s Guide & Mistborn World Resource)</a>
+                            <span class="byline">by Green Ronin</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/435850edf3fc9ad2fc3c51b374de6d6e6997ae2f.png?auto=compress,format&s=363f23233e42f86fa8e285c83cb7a9bb"/>
+                            </td>
+                        <td>
+                            <a href="https://www.froggodgames.com/5th-edition">The Blight</a>
+                            <span class="byline">by Frog God Games</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/de7180eeaac48b2bdd7852cc4257e1cfa782e9cb.png?auto=compress,format&s=d135381e3830dcd54230f80bc546f3a9"/>
+                            </td>
+                        <td>
+                            <a href="http://www.dynamite.com/htmlfiles/viewProduct.html?PRO=C107315">The Boys Vol. 1: The Name of the Game</a>
+                            <span class="byline">by Dynamite Entertainment</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/19ebca2ccd8dad230d67716d611714ae7d1c61b3.png?auto=compress,format&s=fd0de1d3d786ec6381678c3748328769"/>
+                            </td>
+                        <td>
+                            <a href="https://brandonsanderson.com/books/elantris/the-emperors-soul/">The Emperor's Soul</a>
+                            <span class="byline">by Dragon Steel</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/ebe97245192aad50b13357005fc97084897e226c.png?auto=compress,format&s=ab281c3d03110d94d4f467bfe1e13df8"/>
+                            </td>
+                        <td>
+                            <a href="https://www.humanoids.com/y_catalog/book/id/355">The Incal Vol. 1</a>
+                            <span class="byline">by Humanoids</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/ba5a900db797e83223ebe61ca4fea526d93b9c0a.png?auto=compress,format&s=7c387b315b366cfb767dddb4184a8a96"/>
+                            </td>
+                        <td>
+                            <a href="https://www.humanoids.com/y_catalog/book/id/355">The Incal Vol. 2</a>
+                            <span class="byline">by Humanoids</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/c83eb27608331cf97f88e1c6b827238fcc40cccf.png?auto=compress,format&s=09dd538072bee37893d350c1e9dad242"/>
+                            </td>
+                        <td>
+                            <a href="https://www.humanoids.com/y_catalog/book/id/355">The Incal Vol. 3</a>
+                            <span class="byline">by Humanoids</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/ddce86c7bd55b9d28f23dbc7e29e812eba97c443.png?auto=compress,format&s=525b0f31065d4ba62bc643297a21dc25"/>
+                            </td>
+                        <td>
+                            <a href="https://www.humanoids.com/y_catalog/book/id/355">The Incal Vol. 4</a>
+                            <span class="byline">by Humanoids</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/9aeb692c7dfb9d67ad279cb06208d02dedf37880.png?auto=compress,format&s=cfc408d8debd8289c008a1f18b2fd768"/>
+                            </td>
+                        <td>
+                            <a href="https://www.humanoids.com/y_catalog/book/id/355">The Incal Vol. 5</a>
+                            <span class="byline">by Humanoids</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/a850445280e8d5454c2128525373636b393b6e9c.png?auto=compress,format&s=c0fd38474ac982d43a79b369e00e1884"/>
+                            </td>
+                        <td>
+                            <a href="https://www.humanoids.com/y_catalog/book/id/355">The Incal Vol. 6</a>
+                            <span class="byline">by Humanoids</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/d310db6854112f574ed3a0fcbb28d15c161b2326.png?auto=compress,format&s=9245059c38fc32a27d60aeddd57b1541"/>
+                            </td>
+                        <td>
+                            <a href="http://www.conlanpress.com/">The Last Unicorn: Deluxe Edition</a>
+                            <span class="byline">by Peter Beagle</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/a73822eec2910890388c12a5cf4cb1c357c043fe.png?auto=compress,format&s=7a74564ecfb0b972b42b62c94a5d4153"/>
+                            </td>
+                        <td>
+                            <a href="http://craphound.com/">Walkaway by Cory Doctorow, Narrated by Wil Wheaton</a>
+                            <span class="byline">by Cory Doctorow</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/dc7ef9ab0eccf066e52b8e5162319e3d1b629259.png?auto=compress,format&s=9972585648b92bc001447f3da3bcd95f"/>
+                            </td>
+                        <td>
+                            <a href="http://www.cubicle7.co.uk">Warhammer Fantasy Roleplay 2nd Edition Core Rulebook</a>
+                            <span class="byline">by Cubicle 7</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/b65c03b6bb93264ec56db0c4b55f927f3d23667c.png?auto=compress,format&s=f4b7d8fa715f56d12ea9aba1f70fbb09"/>
+                            </td>
+                        <td>
+                            <a href="https://www.dynamite.com/htmlfiles/">White Sand</a>
+                            <span class="byline">by Dynamite Entertainment</span>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/2e79705818c32f65fa75798f93e32377abcbbdd5.png?auto=compress,format&s=25fa163f5923d1153af02f5bf059d396"/>
+                            </td>
+                        <td>
+                            <a href="http://xkcd.com/">xkcd: volume 0</a>
+                            <span class="byline">by Randall Munroe</span>
+                            </td>
+                    </tr>
+                    </tbody>
+            </table>
+        <a id="3DModels"><h2>🛠 3D Models</h2></a>
+        <table>
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>Name</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/1b0c675365c8a07be955171f829ab3fc806d2595.png?auto=compress,format&s=60574609c8c70676d788dbc6df685a27"/>
+                        </td>
+                    <td>
+                        <a href="https://haylandterrain.com/products/apprentices-study">Apprentices Study</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/7c4a846fa19b05df8eb620cd90684a145345b5af.png?auto=compress,format&s=1ec5ad2a2cf4da2ec4407a52a2a50679"/>
+                        </td>
+                    <td>
+                        <a href="https://haylandterrain.com/collections/fantasy-3d-printable-files-1/products/dock-accessories-3d-printable">Dock Accessories</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/5b191652a738386ffc1a4c44ddcc6fc2d10f4e1e.png?auto=compress,format&s=70ee5eac4adbc5cb57d281bd10b363b9"/>
+                        </td>
+                    <td>
+                        <a href="https://haylandterrain.com/">Fantasy Facade Pack 1</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/d8656e28c92b2f8a194d2b4a926c10409a058b8f.png?auto=compress,format&s=d839f259ae998eecab879598dcdd5aa1"/>
+                        </td>
+                    <td>
+                        <a href="https://haylandterrain.com/collections/fantasy-3d-printable-files-1/products/shanty-fences-3d-printable">Shanty Fences</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/04d49734e63e10058eae644150d14604d5bc93aa.png?auto=compress,format&s=2f01c948d97eb30a084687ce7f14f565"/>
+                        </td>
+                    <td>
+                        <a href="https://haylandterrain.com/products/sitting-female-townsfolk">Sitting Female Townsfolk</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/4879d1702f641fc327422c2ad78fe664235ecfd3.png?auto=compress,format&s=6555c36b484a8e422b557e28c25871eb"/>
+                        </td>
+                    <td>
+                        <a href="https://haylandterrain.com/products/sitting-male-townfolk">Sitting Male Townfolk</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/ffd38369fcead3cc6ab73760673e7fb958e7c3ba.png?auto=compress,format&s=56416dd3322e64e0c73d129bbef2ba1a"/>
+                        </td>
+                    <td>
+                        <a href="https://haylandterrain.com/products/small-viking-huts">Small Viking Huts</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/5e40a42d93bcad3cf6f105c7a7980c34d060df8b.png?auto=compress,format&s=bdc3a79463e2359dfa6c85ae11ac8ec8"/>
+                        </td>
+                    <td>
+                        <a href="https://haylandterrain.com/collections/fantasy-3d-printable-files-1/products/tavern-bar-chairs-and-tables">Tavern Bar - Chairs & Tables</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/bdb2f2c409eb2eb1f2b2f24b76c88baf4239bc35.png?auto=compress,format&s=254ba8f3ea7161396d42364fb8083a2d"/>
+                        </td>
+                    <td>
+                        <a href="https://haylandterrain.com/collections/fantasy-3d-printable-files-1/products/thatch-hut-3d-printable">Thatch Hut</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/bdfa8820cba620dda58660b1424b0713df1c1802.png?auto=compress,format&s=4a1f93fdd19c00b2faa1be570e4070c9"/>
+                        </td>
+                    <td>
+                        <a href="https://haylandterrain.com/collections/fantasy-3d-printable-files-1/products/yaks-3d-printable">Yaks</a>
+                        </td>
+                </tr>
+                </tbody>
+        </table>
+        <a id="Soundtracks"><h2>🎵 Soundtracks</h2></a>
+        <table>
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>Name</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/bc8996c4f1d3c1473d341858ad275e275fa8e084.png?auto=compress,format&s=ec079dc91e9ff3cde039e980fef491cd"/>
+                        </td>
+                    <td>
+                        <a href="http://www.avirusnamedtom.com/">A Virus Named TOM</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/111e35d02b61d5550500ab96d6ebbd77ebed7a95.png?auto=compress,format&s=2de107d84a98c64feff2dfb63f6f36af"/>
+                        </td>
+                    <td>
+                        <a href="http://www.anomalythegame.com/">Anomaly Warzone Earth</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/eaa589187b76d2ae788466565fff2ad7c151f8d0.png?auto=compress,format&s=98eb2673fdaf0e74b53e5dff729ae6ea"/>
+                        </td>
+                    <td>
+                        <a href="http://www.gaijingames.com">BIT.TRIP BEAT Soundtrack</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/1167173f53160f402f8c2b2d963c296bc29e6cd2.png?auto=compress,format&s=fd788338c7ce8bbe6c0e9aec291f778b"/>
+                        </td>
+                    <td>
+                        <a href="http://supergiantgames.com/?page_id=242">Bastion</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/6fc58d1fcbabe8982b2c79337ea52e3aee779246.png?auto=compress,format&s=f2a80470e1e8eb39643190d19300fe02"/>
+                        </td>
+                    <td>
+                        <a href="http://www.braid-game.com/">Braid Soundtrack</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/3c1c65a3939ed2aa23ea8ed2016ef85752c656bb.png?auto=compress,format&s=c15e8f8376c0afc19df1e319d2b6aac5"/>
+                        </td>
+                    <td>
+                        <a href="http://www.doublefine.com/brutallegend/">Brütal Legend</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/1f69a38e0a83aea5716b64d928c1d663d9bc33f0.png?auto=compress,format&s=734e356aa8d0b555e0e560e71c3a3115"/>
+                        </td>
+                    <td>
+                        <a href="https://benprunty.bandcamp.com/album/color-sky">Color Sky</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/5ea68f36de0fa0c08b4bff88ed5dddb53731bdac.png?auto=compress,format&s=d58d16b0c0df37c6e3f8526950f8e340"/>
+                        </td>
+                    <td>
+                        <a href="http://www.mobigame.net/">EDGE</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/ec57cff90488fa19298d0d0698945bf7c89812d4.png?auto=compress,format&s=cfae6ce64060a590725d22ebc5ccbc85"/>
+                        </td>
+                    <td>
+                        <a href="http://www.graphicaudio.net/our-productions/authors/a-e/brandon-sanderson.html">Elantris  Book 1</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/76f2a42b035f84f68c6cea27dbe004fa28720772.png?auto=compress,format&s=7e29e14b8c70b923e76fa66eec6a0bc6"/>
+                        </td>
+                    <td>
+                        <a href="http://www.graphicaudio.net/our-productions/authors/a-e/brandon-sanderson.html">Elantris  Book 2</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/cd4b03551b6b546967ac968fd705620d7472eece.png?auto=compress,format&s=7e443754ea1b88958aed1b4b34157681"/>
+                        </td>
+                    <td>
+                        <a href="http://www.graphicaudio.net/our-productions/authors/a-e/brandon-sanderson.html">Elantris  Book 3</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/9888d5bba3017a7c067581a95f916903e953cc77.png?auto=compress,format&s=76bb73d431b09ff327b617d2e3f80fe8"/>
+                        </td>
+                    <td>
+                        <a href="http://fezgame.com/">FEZ Soundtrack</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/3763aee6acc9c40c5bb188fc6669a6b27eab3fb1.png?auto=compress,format&s=6ba9775adf41dc68a5b679d4cc1f89a7"/>
+                        </td>
+                    <td>
+                        <a href="http://www.ftlgame.com">FTL: Faster than Light</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/273bf32672c5c5ae205cd191e7c8408d4cacd7fa.png?auto=compress,format&s=31985d722fca85eee881e0dee7273726"/>
+                        </td>
+                    <td>
+                        <a href="http://www.ftlgame.com">FTL: Faster than Light - Advanced Edition Soundtrack</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/79d237c268778ea85741b40e89194a4ac84869b0.png?auto=compress,format&s=1f2e0e23c0b1a51c2526285371a4b1cb"/>
+                        </td>
+                    <td>
+                        <a href="http://subatomicstudios.com/">Fieldrunners Soundtrack</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/1bfb55d36b7f086d7b8f5450c5a270c835d1ee37.png?auto=compress,format&s=6c5e063e350bda425c434852b1ff53de"/>
+                        </td>
+                    <td>
+                        <a href="http://limbogame.org">LIMBO Soundtrack</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/9712fd96626757ac0b315bd3a38aa5abc2f101a8.png?auto=compress,format&s=f5f4526a20037b4607698450d972114f"/>
+                        </td>
+                    <td>
+                        <a href="http://www.psychonauts.com/">Psychonauts Score</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/208ce7fb8b36ba02a2b60b5414b64f399fba42da.png?auto=compress,format&s=1af4d5f41ede5a765988c7d25d2d921b"/>
+                        </td>
+                    <td>
+                        <a href="http://www.psychonauts.com/">Psychonauts Soundtrack</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/4bffa3def6b401635208dbd9a3ecd08b6635f4c3.png?auto=compress,format&s=e64e4d6bf1064f85e9698403ec258e19"/>
+                        </td>
+                    <td>
+                        <a href="http://www.rocketbirds.com/">Rocketbirds: Hardboiled Chicken Soundtrack</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/2ee940dec2ebade9c60098401dd1a4c8bbb94302.png?auto=compress,format&s=56c30781cea00948460234fb83cf78ee"/>
+                        </td>
+                    <td>
+                        <a href="http://spacechemthegame.com/">SpaceChem Soundtrack</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/85b68351ba3ed2867253a2882d6483da0dce370b.png?auto=compress,format&s=2ac6691517a233ffed9741c55a27e47c"/>
+                        </td>
+                    <td>
+                        <a href="http://www.supermeatboy.com/">Super Meat Boy Soundtrack</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/e45fd8e51394a8ba4b2fc050ad114c828e2962cc.png?auto=compress,format&s=3cc5782e194a7beabd4be46b999b2117"/>
+                        </td>
+                    <td>
+                        <a href="https://soundtrackloops.com/shop/genre/synth-fuel-2-drones-fx/">Synth Fuel 2 Drones & FX</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/a67768ca2b853a38a611a1fdaa6377b6f0676ee8.png?auto=compress,format&s=3368037295cf1e87141cc5ac7fc8a3b1"/>
+                        </td>
+                    <td>
+                        <a href="http://www.graphicaudio.net/our-productions/authors/a-e/brandon-sanderson.html">The Hope of Elantris</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/1601f5d9968a1bec182d81bc0be29f4b47f8b5ad.png?auto=compress,format&s=635d2544a8ea47ff4698908da588b99b"/>
+                        </td>
+                    <td>
+                        <a href="http://www.trine2.com">Trine 2: Complete Story Soundtrack</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/d69c20fe18abec7e88c68b7674548e4fa44415c4.png?auto=compress,format&s=6ae4a0601a816abaf6c6eb787821337e"/>
+                        </td>
+                    <td>
+                        <a href="http://www.trine2.com">Trine 2: Goblin Menace Soundtrack</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/a9d73d15843e0a70eb68754acd135fc6fceccca1.png?auto=compress,format&s=b603111b413842e0039952c6d3b4bbf3"/>
+                        </td>
+                    <td>
+                        <a href="http://www.graphicaudio.net/our-productions/authors/a-e/brandon-sanderson.html">Warbreaker Book 1</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/36a4dd1951ea61c0990fdc07d78ff438df13c805.png?auto=compress,format&s=2c2bfbd4bcad7178a4846e786c0ba07b"/>
+                        </td>
+                    <td>
+                        <a href="http://www.graphicaudio.net/our-productions/authors/a-e/brandon-sanderson.html">Warbreaker Book 2</a>
+                        </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/92638084dedf6e0e97f12e82bbbbaaeb535b875e.png?auto=compress,format&s=d99a5114ec898264485efe544665bc65"/>
+                        </td>
+                    <td>
+                        <a href="http://www.graphicaudio.net/our-productions/authors/a-e/brandon-sanderson.html">Warbreaker Book 3</a>
+                        </td>
+                </tr>
+                </tbody>
+        </table>
+        <a id="Software"><h2>💻 Software</h2></a>
+            <table>
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>Name</td>
+                        <td>Platforms</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/19d1e9dd0c48d5370240ee941ed03449517a34ca.png?auto=compress,format&s=55bf40ec4e0b0f4e6dd2fd79fc5baff1"/>
+                            </td>
+                        <td>
+                            <a href="https://www.ashampoo.com/en/usd/pin/1357/multimedia-software/Ashampoo-Photo-Optimizer-7">Ashampoo Photo Optimizer 7</a> </td>
+                        <td>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://duckduckgo.com/?q=GameGuru">GameGuru</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/9533f79501ba7c9e2940d0d02309f6583210c6e6.png?auto=compress,format&s=d514043c5633834b19b7cff6f1c59b1b"/>
+                            </td>
+                        <td>
+                            <a href="http://www.magix.com/us/">Music Maker EDM Edition</a> </td>
+                        <td>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://hb.imgix.net/05ef3d411dea24334a986d38388354d128dc422f.png?auto=compress,format&s=deebd65926bd3148dc22efa911958d15"/>
+                            </td>
+                        <td>
+                            <a href="https://www.pdf-suite.com/">PDF-Suite Standard</a> </td>
+                        <td>
+                            <img class="platform" src="img/windows.svg"/>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="empty_icon"/>
+                            </td>
+                        <td>
+                            <a href="https://duckduckgo.com/?q=RPG Maker VX">RPG Maker VX</a> </td>
+                        <td>
+                            <img class="platform" src="img/steam.svg"/>
+                            </td>
+                    </tr>
+                    </tbody>
+            </table>
+        <a id="Videos"><h2>📺 Videos</h2></a>
+        <table>
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>Name</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="https://hb.imgix.net/36fb5306ca4b0d9638dc4604be9d3b630d4315c9.png?auto=compress,format&s=534923363c0b94675b3832e55c32d824"/>
+                        </td>
+                    <td>
+                        <a href="http://www.doublefine.com/">Double Fine Adventure</a>
+                        </td>
+                </tr>
+                </tbody>
+        </table>
+        <footer>
+            Built with <a href="https://github.com/marianosimone/humble-bundle-cataloger">Humble Bundle Cataloger</a> -
+            <a href="http://fontawesome.io">Font Awesome</a> by Dave Gandy
+        </footer>
+    </body>
+</html>
